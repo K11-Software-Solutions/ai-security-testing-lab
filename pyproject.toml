@@ -1,0 +1,11 @@
+[project]
+name = "ai-security-testing-lab"
+version = "1.0.0"
+description = "Security testing for LLM applications: prompt injection, jailbreaks, leakage, exfiltration, excessive agency, memory poisoning and unbounded consumption, measured with attack success rates and defence-in-depth ablation."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra"
